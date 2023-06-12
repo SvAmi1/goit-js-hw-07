@@ -43,11 +43,11 @@ function handleImgCardClick(ev) {
     },
 );
 galleryModal.show();
-}
 
 function onEscKeyPress(ev) {
     const ESC_KEY_CODE = "Escape";
     if (ev.code === ESC_KEY_CODE) {
         galleryModal.close();
     }
+}
 }
