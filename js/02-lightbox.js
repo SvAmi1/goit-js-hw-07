@@ -6,7 +6,7 @@ function createGalleryMarkup (galleryItems) {
         return `
         <li class="gallery__item">
    <a class="gallery__link" 
-   href=${original}">
+   href="${original}">
       <img class="gallery__image" 
       src="${preview}" 
       alt="${description}" />
@@ -22,9 +22,10 @@ function createGalleryMarkup (galleryItems) {
     galleryEl.insertAdjacentHTML("afterbegin", imgMarkup);
     
     
-   var lightbox = new SimpleLightbox(".gallery a",
-        {captionsData: "alt",
-        captionDelay: 250,});
+    var lightbox = new SimpleLightbox(".gallery a", {
+        captionsData: "alt",
+        captionsDelay: 250,
+      });
 
 
 console.log(galleryItems);
