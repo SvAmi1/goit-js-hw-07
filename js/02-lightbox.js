@@ -27,4 +27,4 @@ function createGalleryMarkup (galleryItems) {
         captionDelay: 250,});
 
 
-// console.log(galleryItems);
+console.log(galleryItems);
